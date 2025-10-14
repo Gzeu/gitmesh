@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply backdrop-blur-md bg-white/10 border border-white/20;
+  }
+  
+  .search-glow {
+    @apply shadow-lg shadow-mesh-primary/25;
+  }
+  
+  .repo-card {
+    @apply bg-white/5 backdrop-blur-sm border border-white/10 hover:border-mesh-primary/30 transition-all duration-300;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-mesh-primary to-mesh-secondary bg-clip-text text-transparent;
+  }
+}
